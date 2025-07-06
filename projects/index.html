@@ -9,9 +9,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>João Miguel Coelho | Page not found</title>
+    <title>João Miguel Coelho | Projects</title>
     <meta name="author" content="João Miguel Coelho" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="hello, world.
+" />
 
 
     <!-- Bootstrap & MDB -->
@@ -31,7 +32,7 @@
     <link rel="shortcut icon" href="/assets/img/favicon.ico"/>
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="jmvcoelho.github.io/404.html">
+    <link rel="canonical" href="jmvcoelho.github.io/projects/">
     
     <!-- Dark Mode -->
     
@@ -71,8 +72,8 @@
               
 
               <!-- Other pages -->
-              <li class="nav-item ">
-                <a class="nav-link" href="/projects/">Projects</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="/projects/">Projects<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/publications/">Publications</a>
@@ -100,12 +101,61 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">Projects</h1>
+            <p class="post-description"></p>
           </header>
 
           <article>
-            Void
+            <!-- pages/projects.md -->
+<div class="projects">
+<!-- Display projects without categories --><!-- Generate cards for each project -->
+  <div class="grid">
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item"><a href="https://jmvcoelho.github.io/assets/pdf/tese.pdf" target="_blank" rel="noopener noreferrer">
+    <div class="card hoverable">
+  
+      <div class="card-body">
+        <h4 class="card-title">MSc Thesis - Geographical Question Answering Leveraging Neural Language Models for Passage Retrieval</h4>
+        <p class="card-text" style="white-space: pre-wrap;">
+This work dealt with geographical passage retrieval.
+
+Summary:
+- Geoparsed large dataset (MS-MARCO).
+- Studied state-of-the art approaches for neural passage retrieval (cross-encoders and bi-encoders).
+- Proposed an hard negative sampling technique based on distance between geographic entities within text.
+- Used a pre-trained T5 model for query generation.
+- Proposed a cross-architecture knowledge distillation leveraging fully differentable soft-ranking functions.
+</p>
+        <div class="row ml-1 mr-1 p-0">
+        </div>
+      </div>
+    </div></a></div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item"><a href="https://apprecommender.caixamagica.pt/" target="_blank" rel="noopener noreferrer">
+    <div class="card hoverable">
+  
+      <div class="card-body">
+        <h4 class="card-title">AppRecommender</h4>
+        <p class="card-text" style="white-space: pre-wrap;">
+This project aimed to study novel approaches for mobile application search and recommendation.
+
+My tasks:
+- Scrapped a novel  dataset containing metadata on mobile applications. 
+- Conducted data cleaning and analysis. 
+- Built a semantic search engine based on neural language models, leveraging a self-supervised training technique. 
+- Studied the impact of said model for More Like This recommendation. 
+- Created and deployed APIs to serve both the search engine and the recommendation system. 
+- Conducted two rounds of user-centered tests.
+</p>
+        <div class="row ml-1 mr-1 p-0">
+        </div>
+      </div>
+    </div></a></div>
+  </div>
+</div>
+
           </article>
 
         </div>
