@@ -8,7 +8,7 @@ profile:
   align: right
   image: photo.jpg
   address: >
-    <p>GHC 5701, 5000 Forbes Ave Pittsburgh, PA</p>  
+    <p>Currently in Lisbon</p>  
     <a href="https://jmvcoelho.github.io/assets/pdf/cv.pdf">Download CV</a><br>  
     <a href="https://scholar.google.com/citations?user=66CKQAsAAAAJ&hl=en">Google Scholar</a>  
 
