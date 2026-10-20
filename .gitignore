@@ -9,3 +9,7 @@ _site
 Gemfile.lock
 vendor
 
+
+# LaTeX build artifacts (CV is compiled in CI)
+assets/tex/*
+!assets/tex/*.tex
