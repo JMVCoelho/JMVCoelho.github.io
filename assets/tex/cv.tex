@@ -4,7 +4,7 @@ top=0.5in,                          % specify top page margin
 bottom=0.5in,                       % specify bottom page margin
 left=0.5in,                         % specify left page margin
 right=0.5in]{geometry}              % specify right page margin
-                       
+
 \usepackage{XCharter}               % set font. comment this line out if you want to use the default LaTeX font Computer Modern
 \usepackage[T1]{fontenc}            % output encoding
 \usepackage[utf8]{inputenc}         % input encoding
@@ -19,11 +19,18 @@ right=0.5in]{geometry}              % specify right page margin
 \pdfgentounicode=1
 
 % format section headings: bolding, size, white space above and below
-\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-6.5pt}]
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{4pt}
 
 % format bullet points: size, white space above and below, white space between bullets
 \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
-\setlist[itemize]{itemsep=-2pt, leftmargin=12pt, topsep=7pt} %%% Test various topsep values to fix vertical spacing errors
+\setlist[itemize]{itemsep=0pt, parsep=0pt, leftmargin=12pt, topsep=1pt, partopsep=0pt, after=\vspace{5pt}}
+
+% bold own name in author lists
+\newcommand{\me}{\textbf{Joao Coelho}}
+
+% keep an entry heading together with its bullets (break before it only if the block does not fit)
+\newcommand{\keep}{\par\vspace{0pt plus 8\baselineskip}\penalty-200\vspace{0pt plus -8\baselineskip}}
 
 % resume starts here
 \begin{document}
@@ -36,170 +43,123 @@ right=0.5in]{geometry}              % specify right page margin
 % contact information
 \centerline{\href{mailto:joaomavc@gmail.com}{joaomavc@gmail.com} | \href{https://jmvcoelho.github.io}{jmvcoelho.github.io} | \href{https://www.linkedin.com/in/jmvcoelho/}{linkedin.com/in/jmvcoelho}}
 
-\vspace{-10pt}
-
-% skills section
 \section*{Summary}
-% \textbf{Machine Learning:} PyTorch, Huggingface, sklearn, LLMs, Embedding models. \\
-% \textbf{Cloud \& Infra:} AWS (EC2, S3, CloudWatch), Azure, Docker \\
-% \textbf{Spoken Languages} Portuguese (native), English (C1)
-
-Joao Coelho is a PhD candidate in a Dual-PhD program between Carnegie Mellon University and Instituto Superior Técnico, expecting to graduate mid 2027. His current research focuses on LLM agents and dense retrieval, with broader interests in Machine Learning, Natural Language Processing, and Information Retrieval. 
-
-%Joao is proficient in Python and PyTorch, with extensive experience in pre-training and fine-tuning language models for various tasks.
+PhD candidate in a dual PhD program between Carnegie Mellon University and Instituto Superior Técnico, expecting to graduate in mid-2027. My current research focuses on LLM agents and dense retrieval, with broader interests in Machine Learning, Natural Language Processing, and Information Retrieval.
 
 
-\vspace{-6.5pt}
+% education section
+\section*{Education}
+\textbf{Carnegie Mellon University}, Pittsburgh, PA -- Dual PhD in Language Technologies \hfill Sep 2022 -- Present
+\begin{itemize}
+  \item Advisor: Prof. Chenyan Xiong. Collaborated with Prof. Jamie Callan.
+\end{itemize}
+
+\textbf{Instituto Superior Técnico}, Lisbon, Portugal -- Dual PhD in Electrical Engineering \hfill Sep 2022 -- Present
+\begin{itemize}
+  \item Advisors: Prof. Bruno Martins and Prof. Joao Magalhaes.
+\end{itemize}
+
+\textbf{Instituto Superior Técnico}, Lisbon, Portugal -- MSc in Computer Science and Engineering \hfill Sep 2021
+\begin{itemize}
+  \item Merit Distinctions: 2019/2020 and 2020/2021.
+  \item Thesis: Geographical Question Answering Leveraging Neural Language Models for Passage Retrieval.
+\end{itemize}
+
+\textbf{Instituto Superior Técnico}, Lisbon, Portugal -- BSc in Computer Science and Engineering \hfill Sep 2019
+\begin{itemize}
+  \item Merit Distinctions: 2017/2018 and 2018/2019.
+\end{itemize}
 
 
 \section*{Selected Publications}
 
-\textbf{Preprints}  
-\vspace{-5pt}
+\textbf{Preprints}
 \begin{itemize}
-
-    \item Joao Coelho, Hong Wang, Jie Yuan, Zhuoer Wang, Samson Koelle, Wei Niu. \textbf{Learning Multi-Step Query Rewriting via Corpus Feedback for Conversational Search}. ArXiv (under review), 2026.
-    
-    \item Joao Coelho, Joao Magalhaes, Bruno Martins, Chenyan Xiong. \textbf{Effective Reinforcement Learning for Agentic Search by Recycling Zero-Variance Queries During Training}. ArXiv (under review), 2026.
-
-    \item Sidhaarth Murali, Joao Coelho, Jingjie Ning, Joao Magalhaes, Bruno Martins, Chenyan Xiong. \textbf{Beyond Parallel Sampling: Diverse Query Initialization for Agentic Search}. ArXiv (under review), 2026.
-
+  \item \me, Hong Wang, Jie Yuan, Zhuoer Wang, Samson Koelle, and Wei Niu. \textit{Learning Multi-Step Query Rewriting via Corpus Feedback for Conversational Search}. arXiv (under review), 2026.
+  \item \me, Joao Magalhaes, Bruno Martins, and Chenyan Xiong. \textit{Effective Reinforcement Learning for Agentic Search by Recycling Zero-Variance Queries During Training}. arXiv (under review), 2026.
+  \item Sidhaarth Murali, \me, Jingjie Ning, Joao Magalhaes, Bruno Martins, and Chenyan Xiong. \textit{Beyond Parallel Sampling: Diverse Query Initialization for Agentic Search}. arXiv (under review), 2026.
 \end{itemize}
 
-\textbf{International Conferences}  
-\vspace{-5pt}
+\textbf{International Conferences}
 \begin{itemize}
-
-    \item Joao Coelho, Jingjie Ning, Jingyuan He, Kangrui Mao, Abhijay Sai Paladugu, Pranav Setlur, Jiahe Jin, Jamie Callan, Joao Magalhaes, Bruno Martins, Chenyan Xiong. \textbf{DeepResearchGym: A Free, Transparent, and Reproducible Sandbox for Deep Research}. Proceedings of the ACM SIGIR Conference on Innovative Concepts and Theories in Information Retrieval, 2026.
-
-    \item Jingjie Ning$^*$, Joao Coelho$^*$,  Yibo Kong$^*$, Yunfan Long, Bruno Martins, Joao Magalhaes, Jamie Callan, Chenyan Xiong. \textbf{Agentic Search in the Wild: Intents and Trajectory Dynamics from 14M+ Real Search Requests}. Proceedings of the International ACM SIGIR Conference on Research and Development in Information Retrieval, 2026. ($^*$equal contribution)
-    
-    \item Joao Coelho, Bruno Martins, Joao Magalhaes, and Chenyan Xiong. \textbf{Aligning Web Query Generation with Ranking Objectives via Direct Preference Optimization}. Proceedings of the International ACM SIGIR Conference on Research and Development in Information Retrieval, 2025.
-    \vspace{-3pt}
-    \item Joao Coelho, Bruno Martins, Joao Magalhaes, Jamie Callan, and Chenyan Xiong, \textbf{Dwell in the Beginning: How Language Models Embed
-Long Documents for Dense Retrieval}. Proceedings of the Annual Meeting of the Association for Computational Linguistics, 2024.
-    \vspace{-3pt}
-    \item Joao Coelho, Joao Magalhaes, and Bruno Martins. \textbf{Improving Neural Models for the Retrieval of Relevant Passages to Geographical
-Queries}. Proceedings of the ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems, 2021.
+  \item \me, Jingjie Ning, Jingyuan He, Kangrui Mao, Abhijay Sai Paladugu, Pranav Setlur, Jiahe Jin, Jamie Callan, Joao Magalhaes, Bruno Martins, and Chenyan Xiong. \textit{DeepResearchGym: A Free, Transparent, and Reproducible Sandbox for Deep Research}. \textbf{ICTIR 2026}.
+  \item Jingjie Ning$^*$, \me$^*$, Yibo Kong$^*$, Yunfan Long, Bruno Martins, Joao Magalhaes, Jamie Callan, and Chenyan Xiong. \textit{Agentic Search in the Wild: Intents and Trajectory Dynamics from 14M+ Real Search Requests}. \textbf{SIGIR 2026}. ($^*$equal contribution)
+  \item \me, Bruno Martins, Joao Magalhaes, and Chenyan Xiong. \textit{Aligning Web Query Generation with Ranking Objectives via Direct Preference Optimization}. \textbf{SIGIR 2025}.
+  \item \me, Bruno Martins, Joao Magalhaes, Jamie Callan, and Chenyan Xiong. \textit{Dwell in the Beginning: How Language Models Embed Long Documents for Dense Retrieval}. \textbf{ACL 2024}.
+  \item \me, Joao Magalhaes, and Bruno Martins. \textit{Improving Neural Models for the Retrieval of Relevant Passages to Geographical Queries}. \textbf{SIGSPATIAL 2021}.
 \end{itemize}
 
-
-\textbf{International Journals}  
-\vspace{-5pt}
+\textbf{International Journals}
 \begin{itemize}
-    \item Joao Coelho, Beatriz Paula, Diogo Mano, Carlos Coutinho, Joao Oliveira, Ricardo Ribeiro, and Fernando Batista, \textbf{Semantic Similarity for Mobile Application Recommendation under Scarce User Data}. Engineering Applications of Artificial Intelligence, 2023.
+  \item \me, Beatriz Paula, Diogo Mano, Carlos Coutinho, Joao Oliveira, Ricardo Ribeiro, and Fernando Batista. \textit{Semantic Similarity for Mobile Application Recommendation under Scarce User Data}. \textbf{Engineering Applications of Artificial Intelligence}, 2023.
 \end{itemize}
 
-
-
-% \textbf{Machine Learning:} PyTorch, Huggingface, sklearn, LLMs, Embedding models. \\
-% \textbf{Cloud \& Infra:} AWS (EC2, S3, CloudWatch), Azure, Docker \\
-% \textbf{Spoken Languages} Portuguese (native), English (C1)
-
-
-\vspace{-6.5pt}
 
 % experience section
+\keep
 \section*{Experience}
-\textbf{Applied Scientist Intern,} {Amazon Web Services} -- Seattle, WA \hfill May 2025 -- Aug 2025 \\
-Supervisors: Dr. Wei Niu, Dr. Hong Wang
+\textbf{Applied Scientist Intern}, Amazon Web Services -- Seattle, WA \hfill May 2025 -- Aug 2025 \\
+Supervisors: Dr. Wei Niu and Dr. Hong Wang
 \begin{itemize}
   \item Built distributed training and inference infrastructure to support extensive dense and sparse retrieval experimentation across knowledge bases scaling up to 136 million documents.
-  \item Proposed a search-aware multi-turn query rewriting agent, which achieved 10\% absolute hit rate improvement over the team's production solution  on internal customer service search benchmarks.
-  \item Improved efficiency by distilling the agentic behavior into a single-turn locally deployable language model, retaining 98\% of the performance while running 4 times faster.
+  \item Proposed a search-aware multi-turn query rewriting agent, which achieved a 10\% absolute hit rate improvement over the team's production solution on internal customer service search benchmarks.
+  \item Improved efficiency by distilling the agentic behavior into a single-turn, locally deployable language model, retaining 98\% of the performance while running 4 times faster.
+  \item Submitted the work as a conference paper (under review).
 \end{itemize}
 
-\textbf{Machine Learning Engineer,} {Caixa Mágica Software} -- Lisbon, Portugal \hfill Sep 2020 -- Sep 2022 \\
-Supervisors: Prof. Carlos Coutinho
+\keep
+\textbf{Machine Learning Engineer}, Caixa Mágica Software -- Lisbon, Portugal \hfill Sep 2020 -- Sep 2022 \\
+Supervisor: Prof. Carlos Coutinho
 \begin{itemize}
-  \item Proposed self-supervised BERT-based recommendation system for mobile applications achieving 10\% absolute improvement in real-user satisfaction from A/B testing on a major app store.
+  \item Proposed a self-supervised BERT-based recommendation system for mobile applications, achieving a 10\% absolute improvement in real-user satisfaction in A/B testing on a major app store.
   \item Led and presented a proof-of-concept integrating graph databases and neural entity extraction for the Portuguese Archive, securing one of the company's largest client projects.
   \item Built the machine learning pipeline that extended this proof-of-concept, enabling entity extraction and disambiguation over a large historical document collection.
   \item Supervised interns across recommendation and NLP projects; led technical workshops and co-authored multiple peer-reviewed papers.
 \end{itemize}
 
-
-\textbf{Intern Developer,} {Caixa Mágica Software} -- Lisbon, Portugal \hfill Jul 2020 -- Sep 2020 \\
-\vspace{-9pt}
+\keep
+\textbf{Intern Developer}, Caixa Mágica Software -- Lisbon, Portugal \hfill Jul 2020 -- Sep 2020
 \begin{itemize}
-  \item Built FAQ retrieval system for automated helpdesk platform under low data resources.
+  \item Built an FAQ retrieval system for an automated helpdesk platform under low-resource conditions.
   \item Deployed the solution by integrating retrieval models with a React front-end using Docker and CI/CD pipelines.
 \end{itemize}
 
-\textbf{Intern Developer,} {Xpand IT} -- Lisbon, Portugal \hfill Jul 2019 -- Sep 2019 \\
-\vspace{-9pt}
+\keep
+\textbf{Intern Developer}, Xpand IT -- Lisbon, Portugal \hfill Jul 2019 -- Sep 2019
 \begin{itemize}
-  \item Implemented proactive chatbot with notification and polling capabilities for internal MS Teams integration.
-  \item Integrated LUIS language understanding and deployed production system using .NET and Azure infrastructure.
+  \item Implemented a proactive chatbot with notification and polling capabilities for internal MS Teams integration.
+  \item Integrated LUIS language understanding and deployed the production system using .NET and Azure infrastructure.
 \end{itemize}
 
-\vspace{-18.5pt}
 
-
+\keep
 \section*{Teaching}
-\textbf{Teaching Assistant,} {Carnegie Mellon University} -- Pittsburgh, PA \\
+\textbf{Teaching Assistant}, Carnegie Mellon University -- Pittsburgh, PA \\
 Supervisor: Prof. Chenyan Xiong
-\vspace{-4pt}
 \begin{itemize}
   \item Large Language Models: Methods and Applications (Fall 2024)
 \end{itemize}
 
-\textbf{Teaching Assistant,} {Instituto Superior Técnico -- Lisbon, Portugal \\
+\keep
+\textbf{Teaching Assistant}, Instituto Superior Técnico -- Lisbon, Portugal \\
 Supervisor: Prof. Ines Lynce
-\vspace{-4pt}
 \begin{itemize}
   \item Search and Planning (Fall 2021, Fall 2022)
   \item Artificial Intelligence (Spring 2021, Spring 2022)
 \end{itemize}
 
 
-
-\vspace{-18.5pt}
-
-
-% education section
-\section*{Education}
-\textbf{Carnegie Mellon University, Pittsburgh, PA} -- Dual PhD in Language Technologies \hfill Sep 2022 - Present \\
-\vspace{-9pt}
-\begin{itemize}
-  \item Supervisors: Prof. Chenyan Xiong, and worked closely with Prof. Jamie Callan.
-\end{itemize}
-\textbf{Instituto Superior Técnico, Lisbon, Portugal} -- Dual PhD in Electrical Engineering \hfill Sep 2022 - Present \\
-\vspace{-9pt}
-\begin{itemize}
-  \item Supervisors: Prof. Bruno Martins and Prof. Joao Magalhaes.
-\end{itemize}
-
-\textbf{Instituto Superior Técnico, Lisbon, Portugal} -- MSc in Computer Science and Engineering \hfill Sep 2021 \\
-\vspace{-9pt}
-\begin{itemize}
-    \item Merit Distinctions: 2019/2020 and 2020/2021.
-    \vspace{-3pt}
-    \item Thesis: Geographical Question Answering Leveraging Neural Language Models for Passage Retrieval 
-\end{itemize}
-
-\textbf{Instituto Superior Técnico, Lisbon, Portugal} -- BSc in Computer Science and Engineering \hfill Sep 2019 \\
-\vspace{-9pt}
-\begin{itemize}
-    \item Merit Distinctions: 2017/2018 and 2018/2019.
-\end{itemize}
-
-
-
-
-
-
 \section*{Skills}
-\textbf{Machine Learning \& NLP:}  
+\textbf{Machine Learning \& NLP:}
 PyTorch, Transformers, LLM (pre-, mid-, post-)training, Knowledge Distillation, Dense Retrieval, Re-ranking, ANN, Recommendation Systems, Question Answering, RAG, LLM Agents, Search Agents
 
-\textbf{Engineering \& Cloud:}  
-Distributed Training/Inference, AWS, Azure, Docker, CI/CD.
+\textbf{Engineering \& Cloud:}
+Distributed Training/Inference, AWS, Azure, Docker, CI/CD
 
-\textbf{Databases:}  
-SQL, NoSQL, Graph Databases, Elasticsearch  
+\textbf{Databases:}
+SQL, NoSQL, Graph Databases, Elasticsearch
 
-\textbf{Languages:} Portuguese (native), English (C1).
+\textbf{Languages:} Portuguese (native), English (C1)
 
 
 \end{document}
