@@ -22,13 +22,35 @@ Currently a PhD Candidate at <a href='https://deec.tecnico.ulisboa.pt/'>IST (DEE
 
 My current research focuses on dense retrieval and deep search systems, including training LLM search agents with reinforcement learning, and building infrastructure for deep research. I spent summer 2025 as an Applied Scientist Intern at Amazon. I worked with the AWS Connect team on agentic search for contact centers.
 
-## Recent Work
-
-**Oct 2026** · [Learning Multi-Step Query Rewriting via Corpus Feedback for Conversational Search](https://arxiv.org/abs/2610.10955)  
-Pre-print of the work resulting from an AWS internship, where a conversational query rewriting agent iteratively refines its queries based on the documents it retrieves, trained with reinforcement learning using retrieval quality as the only reward, without human rewrite annotations.
-
-**Jun 2026** · [Effective Reinforcement Learning for Agentic Search by Recycling Zero-Variance Queries During Training](https://arxiv.org/abs/2606.10709)  
-Returning zero-variance queries to the training pool for later resampling makes GRPO training of search agents more effective, with a 1.7B agent matching prior systems of up to 7B parameters.
-
-**Jun 2026** · [Beyond Parallel Sampling: Diverse Query Initialization for Agentic Search](https://arxiv.org/abs/2606.17209)  
-DivInit is a training-free method that picks diverse first-turn queries for parallel search trajectories, reducing the redundancy that limits standard parallel sampling.
+<div class="publications recent-work">
+  <h2>Recent Work</h2>
+  <ol class="bibliography">
+    <li>
+      <div class="row">
+        <div class="col col-sm-2 abbr"><span class="recent-date">Oct 2026</span></div>
+        <div class="col-sm-8">
+          <div class="title"><a href="https://arxiv.org/abs/2610.10955">Learning Multi-Step Query Rewriting via Corpus Feedback for Conversational Search</a></div>
+          <div class="periodical">Pre-print of the work resulting from an AWS internship, where a conversational query rewriting agent iteratively refines its queries based on the documents it retrieves, trained with reinforcement learning using retrieval quality as the only reward, without human rewrite annotations.</div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="row">
+        <div class="col col-sm-2 abbr"><span class="recent-date">Jun 2026</span></div>
+        <div class="col-sm-8">
+          <div class="title"><a href="https://arxiv.org/abs/2606.10709">Effective Reinforcement Learning for Agentic Search by Recycling Zero-Variance Queries During Training</a></div>
+          <div class="periodical">Returning zero-variance queries to the training pool for later resampling makes GRPO training of search agents more effective, with a 1.7B agent matching prior systems of up to 7B parameters.</div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="row">
+        <div class="col col-sm-2 abbr"><span class="recent-date">Jun 2026</span></div>
+        <div class="col-sm-8">
+          <div class="title"><a href="https://arxiv.org/abs/2606.17209">Beyond Parallel Sampling: Diverse Query Initialization for Agentic Search</a></div>
+          <div class="periodical">DivInit is a training-free method that picks diverse first-turn queries for parallel search trajectories, reducing the redundancy that limits standard parallel sampling.</div>
+        </div>
+      </div>
+    </li>
+  </ol>
+</div>
