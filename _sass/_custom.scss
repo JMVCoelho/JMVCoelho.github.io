@@ -1,0 +1,19 @@
+// Site-specific style tweaks layered on top of al_folio_core.
+
+// Smaller profile photo on the about page (theme default is 30% of the content width)
+@media (min-width: 576px) {
+  .profile {
+    width: 20%;
+  }
+}
+
+// One item per line under the photo (theme default renders them inline)
+.profile .more-info p {
+  display: block;
+}
+
+// Capitalized, evenly spaced section headings on the about page (the only article with a profile)
+article:has(> .profile) h2 {
+  margin-top: 2rem;
+  text-transform: capitalize;
+}
