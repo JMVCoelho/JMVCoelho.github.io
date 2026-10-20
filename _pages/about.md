@@ -8,12 +8,16 @@ profile:
   align: right
   image: photo.jpg
   more_info: >
-    <p>Currently in Lisbon</p>
-    <p><a href="https://jmvcoelho.github.io/assets/pdf/cv.pdf">Download CV</a></p>
-    <p><a href="https://scholar.google.com/citations?user=66CKQAsAAAAJ&hl=en">Google Scholar</a></p>
+    <div class="profile-links">
+    <a href="/assets/pdf/cv.pdf" title="CV"><i class="ai ai-cv"></i></a>
+    <a href="mailto:joaomavc@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://scholar.google.com/citations?user=66CKQAsAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+    <a href="https://github.com/JMVCoelho" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/jmvcoelho" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false # social icons are shown under the photo instead (profile.more_info)
 ---
 
 My research interests lie in the areas of Machine Learning, Natural Language Processing, and Information Retrieval.

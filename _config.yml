@@ -6,8 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: João
 middle_name: Miguel
 last_name: Coelho
-contact_note: >
-  Feel free to drop an e-mail.
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   hello, world.
 footer_text: >

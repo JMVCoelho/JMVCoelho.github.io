@@ -13,16 +13,26 @@
   }
 }
 
-// Short, quiet caption under the photo instead of a monospace block
+// Contact icons under the photo, spread evenly across its width
 .profile .more-info {
-  font-family: inherit;
-  font-size: 0.85rem;
   margin-top: 0.75rem;
-  line-height: 1.6;
-  color: var(--global-text-color-light);
+  margin-bottom: 1.5rem;
+}
 
-  p {
-    display: block;
+.profile-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 1;
+
+  a {
+    color: var(--global-text-color);
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
   }
 }
 
@@ -77,26 +87,5 @@ article:has(> .profile) {
 
   .periodical {
     color: var(--global-text-color-light);
-  }
-}
-
-// ---------------------------------------------------------------------------
-// Footer of the about page: smaller social icons
-// ---------------------------------------------------------------------------
-
-.social {
-  margin-top: 3rem;
-
-  .contact-icons {
-    font-size: 2rem;
-
-    a {
-      margin: 0 0.5rem;
-
-      img {
-        width: 1.8rem;
-        height: 1.8rem;
-      }
-    }
   }
 }
