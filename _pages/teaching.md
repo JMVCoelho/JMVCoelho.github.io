@@ -1,15 +1,24 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Course materials, schedules, and resources for classes taught.
+title: Teaching
+description: 
 nav: true
-nav_order: 6
-calendar: true
+nav_order: 2
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+## Instituto Superior Técnico
 
-{% include courses.liquid %}
+Teaching Assistant
+
+**Search and Planning**: [2021/2022](https://fenix.tecnico.ulisboa.pt/disciplinas/PPla/2021-2022/1-semestre), [2022/2023](https://fenix.tecnico.ulisboa.pt/disciplinas/PPla/2022-2023/1-semestre)
+
+**Artificial Intelligence**: [2021/2022](https://fenix.tecnico.ulisboa.pt/disciplinas/IArt2/2021-2022/2-semestre), [2022/2023](https://fenix.tecnico.ulisboa.pt/disciplinas/IArt2/2022-2023/2-semestre)
+
+
+## Carnegie Mellon University
+
+Teaching Assistant
+
+**Large Language Models: Methods and Applications**: [2024/2025](https://cmu-llms.org/)

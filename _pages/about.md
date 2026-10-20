@@ -1,34 +1,34 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle:
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: photo.jpg
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Currently in Lisbon</p>
+    <p><a href="https://jmvcoelho.github.io/assets/pdf/cv.pdf">Download CV</a></p>
+    <p><a href="https://scholar.google.com/citations?user=66CKQAsAAAAJ&hl=en">Google Scholar</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+My research interests lie in the areas of Machine Learning, Natural Language Processing, and Information Retrieval.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Currently a PhD Candidate at <a href='https://deec.tecnico.ulisboa.pt/'>IST (DEEC)</a> and <a href='https://www.lti.cs.cmu.edu/'>CMU (LTI)</a>, under the dual degree CMU-Portugal program, supervised by <a href='http://web.ist.utl.pt/bruno.g.martins/'>Bruno Martins</a>, <a href='http://ctp.di.fct.unl.pt/~jmag/'>João Magalhães</a>, and <a href='http://www.cs.cmu.edu/~cx/'>Chenyan Xiong</a>. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My current research focuses on dense retrieval and deep search systems, including training LLM search agents with reinforcement learning, and building infrastructure for deep research. I spent summer 2025 as an Applied Scientist Intern at Amazon. I worked with the AWS Connect team on agentic search for contact centers.
+
+## Recent Work
+
+**Oct 2026** · [Learning Multi-Step Query Rewriting via Corpus Feedback for Conversational Search](https://arxiv.org/abs/2610.10955)  
+Pre-print of the work resulting from an AWS internship, where a conversational query rewriting agent iteratively refines its queries based on the documents it retrieves, trained with reinforcement learning using retrieval quality as the only reward, without human rewrite annotations.
+
+**Jun 2026** · [Effective Reinforcement Learning for Agentic Search by Recycling Zero-Variance Queries During Training](https://arxiv.org/abs/2606.10709)  
+Returning zero-variance queries to the training pool for later resampling makes GRPO training of search agents more effective, with a 1.7B agent matching prior systems of up to 7B parameters.
+
+**Jun 2026** · [Beyond Parallel Sampling: Diverse Query Initialization for Agentic Search](https://arxiv.org/abs/2606.17209)  
+DivInit is a training-free method that picks diverse first-turn queries for parallel search trajectories, reducing the redundancy that limits standard parallel sampling.

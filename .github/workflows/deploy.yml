@@ -91,6 +91,13 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+      - name: Compile CV 📄
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
+          working_directory: assets/tex
+      - name: Add compiled CV to the build
+        run: cp assets/tex/cv.pdf assets/pdf/cv.pdf
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick

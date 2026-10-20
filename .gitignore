@@ -19,3 +19,8 @@ vendor
 # Python bytecode from bin/ helper scripts
 __pycache__/
 *.pyc
+
+# LaTeX build artifacts (CV is compiled in CI)
+assets/tex/*
+!assets/tex/*.tex
+assets/live.main.tex
