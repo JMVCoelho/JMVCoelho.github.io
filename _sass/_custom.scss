@@ -2,6 +2,23 @@
 // Loaded from the local assets/css/main.scss override (see .al-folio-overrides.yml).
 
 // ---------------------------------------------------------------------------
+// Accent color: "linkblue" RGB(0,128,255), as used in my papers. Applies to
+// links, venue badges and highlights in both light and dark mode.
+// ---------------------------------------------------------------------------
+
+:root,
+html[data-theme="dark"] {
+  --global-theme-color: rgb(0, 128, 255);
+  --global-hover-color: rgb(0, 128, 255);
+}
+
+// White labels on the blue venue badges (the theme uses the page background
+// color, which is dark-on-blue in dark mode)
+.publications ol.bibliography li .abbr abbr {
+  color: #fff !important;
+}
+
+// ---------------------------------------------------------------------------
 // About page: intro block (bio + photo)
 // ---------------------------------------------------------------------------
 
