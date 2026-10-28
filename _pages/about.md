@@ -24,7 +24,7 @@ My research interests lie in the areas of Machine Learning, Natural Language Pro
 
 Currently a PhD Candidate at <a href='https://deec.tecnico.ulisboa.pt/'>IST (DEEC)</a> and <a href='https://www.lti.cs.cmu.edu/'>CMU (LTI)</a>, under the dual degree CMU-Portugal program, supervised by <a href='http://web.ist.utl.pt/bruno.g.martins/'>Bruno Martins</a>, <a href='http://ctp.di.fct.unl.pt/~jmag/'>João Magalhães</a>, and <a href='http://www.cs.cmu.edu/~cx/'>Chenyan Xiong</a>. 
 
-My current research focuses on dense retrieval and deep search systems, including training LLM search agents with reinforcement learning, and building infrastructure for deep research. I spent summer 2025 as an Applied Scientist Intern at Amazon. I worked with the AWS Connect team on agentic search for contact centers.
+My current research focuses on dense retrieval and deep search systems, including training LLM search agents with reinforcement learning, and building infrastructure for deep research. During summer 2025, I worked with the <a href='https://aws.amazon.com/products/connect/'>AWS Connect</a> team at Amazon on agentic search for contact centers.
 
 <div class="publications recent-work">
   <h2>Recent Work</h2>
@@ -34,7 +34,7 @@ My current research focuses on dense retrieval and deep search systems, includin
         <div class="col col-sm-2 abbr"><span class="recent-date">Oct 2026</span></div>
         <div class="col-sm-8">
           <div class="title"><a href="https://arxiv.org/abs/2610.10955">Learning Multi-Step Query Rewriting via Corpus Feedback for Conversational Search</a></div>
-          <div class="periodical">Pre-print of the work resulting from an AWS internship, where a conversational query rewriting agent iteratively refines its queries based on the documents it retrieves, trained with reinforcement learning using retrieval quality as the only reward, without human rewrite annotations.</div>
+          <div class="periodical">A conversational query rewriting agent that iteratively refines its queries based on the documents it retrieves, trained with reinforcement learning using retrieval quality as the only reward, without human rewrite annotations.</div>
         </div>
       </div>
     </li>
